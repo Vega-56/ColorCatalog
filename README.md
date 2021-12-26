@@ -7,10 +7,10 @@ Following instructions from Alex Bank's "Learning React Native" LinkedIn Learnin
 
 1. Install dependencies using
 
-`````npm install
+`````npm install````
 
 2. Run Expo project using
 
-```` npm start
+````npm start````
 
-`````
+
