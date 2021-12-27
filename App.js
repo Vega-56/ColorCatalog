@@ -4,23 +4,16 @@ import ColorButton from "./components/ColorButton";
 import { generate } from "shortid";
 import ColorForm from "./components/ColorForm";
 
+import { useColors } from "./hooks";
 // Making a hook like this helps separate logic from presentaiton
 // also helps it be more reusable for other components
-const useColors = () => {
-	const [colors, setColors] = useState([]);
-	// Contains functionality to create new list of colors + add to list
-	const addColor = color => {
-		const newColor = { id: generate(), color};
-		setColors([newColor, ...colors])
-	};
-	return {colors, addColor};
-}
+
 export default function App() {
 	const [backgroundColor, setBackgroundColor] = useState("blue");
-	const {colors, addColor} = useColors();
+	const { colors, addColor } = useColors();
 	return (
 		<>
-			<ColorForm onNewColor={addColor}/>
+			<ColorForm onNewColor={addColor} />
 			<FlatList
 				style={[styles.container, { backgroundColor }]}
 				data={colors}
