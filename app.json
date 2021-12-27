@@ -1,32 +1,35 @@
 {
-  "expo": {
-    "name": "colorCatalog",
-    "slug": "colorCatalog",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"expo": {
+		"name": "colorCatalog",
+		"description": "Catalog and save your favorite colours. Also view details for each saved color.",
+		"slug": "colorCatalog",
+		"version": "1.0.0",
+		"platforms": ["ios", "android"],
+		"orientation": "portrait",
+		"icon": "./assets/cc-icon.png",
+		"splash": {
+			"image": "./assets/cc-splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.vega56.colorcatalog",
+			"buildNumber": "1.0.0"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"package": "com.vega56.colorcatalog"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		}
+	}
 }
