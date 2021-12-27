@@ -22,7 +22,6 @@ export const useColors = () => {
 
 	// Save Colors
 	useEffect(() => {
-		console.log(colors);
 		AsyncStorage.setItem("@ColorListStore:Colors", JSON.stringify(colors));
 	}, [colors]);
 
